@@ -7,13 +7,9 @@ function Navbar() {
 
   const [isActive, setIsActive] = useState(null); 
   
-
-
-
   const handleActivePage = (pageNum)=>{
     setIsActive(pageNum);
   }
-
 
   return (
     <nav className='nav'>

@@ -174,7 +174,6 @@ button{
     }
 }
 
-
 .star{
     transition: all 1s ease-in-out;
     z-index: 0;
@@ -182,22 +181,22 @@ button{
     opacity: 0.7;
 }
 .token-1{
-    margin: 0% 0% 0% 0%;
+    margin: 0% 0% 0% 0%; 
     height: 40px;
     width: 40px;
 }
 .token-2{
-    margin: 10% 0% 0% 70%;
+    margin: 10% 0% 0% 70%; 
     height: 80px;
     width: 80px;
 }
 .token-3{
-    margin: 20% 70% 0% 0%;
+    margin: 20% 70% 0% 0%; 
     height: 200px;
     width: 200px;
 }
 .token-4{
-    margin: 5% 0% 0% 55%;
+    margin: 50% 0% 0% 0%; 
     height: 350px;
     width: 350px;
 }
@@ -205,6 +204,34 @@ button{
     margin: -5% 55% 0% 0%;
     height: 50px;
     width: 50px;
+}
+
+@media (max-width:700px) {
+    .token-1{
+        margin: 0% 0% 0% 0%;
+        height: 40px;
+        width: 40px;
+    }
+    .token-2{
+        margin: 90% 0% 0% 80%;
+        height: 120px;
+        width: 120px;
+    }
+    .token-3{
+        margin: 20% 70% 0% 0%;
+        height: 90px;
+        width: 90px;
+    }
+    .token-4{
+        margin: 50% 0% 0% 0%;
+        height: 90px;
+        width: 90px;
+    }
+    .token-5{
+        margin: -5% 55% 0% 0%;
+        height: 50px;
+        width: 50px;
+    }
 }
 
 /*project component*/
@@ -246,8 +273,85 @@ button{
     font-size: 11px;
 }
 
+.stats{
+    text-align: center;
+}
+
+.stats-reiteration{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 12px;
+}
+
 @media (max-width:500px) {
     .project-article{
         width: 250px;
     }
+    .stats-reiteration{
+        flex-wrap: nowrap;
+        font-size: 9px;
+    }
+}
+
+/*About*/
+
+.about-section{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    height: fit-content;
+    width: auto;
+    padding: 20px;
+    margin-top: 25px;
+    background-color: var(--primary-section2-color);
+}
+
+.profile-img{
+    width: 150px;
+    height: 150px;
+    margin-top: 55px;
+}
+
+.about-para{
+    width: 60ch;
+}
+
+
+
+@media (max-width:700px) {
+    .about-para{
+        width: 40ch;
+        font-size: 14px;
+    }
+    
+}
+
+@media (max-width:425px) {
+    .about-para{
+        width: 30ch;
+        font-size: 12px;
+    }
+    
+}
+
+/*Footer*/
+.footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+.footer-icon{
+    transition: all 0.3s ease-in-out;
+}
+.footer-icon:hover{
+    color: rgb(239, 239, 102);
+}
+.github-icon{
+    transform: rotate(90deg);
 }

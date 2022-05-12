@@ -1,8 +1,10 @@
 import React, {useState, useRef, useEffect} from 'react'
 import projects from '../projectsData'
 import Project from '../components/Project'
-import star from '../images/star.svg'
+//import star from '../images/star.svg'
 import Stats from '../components/Stats'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCodeFork, faCode, faQrcode, faTerminal,faMeteor } from '@fortawesome/free-solid-svg-icons'
 
 function Home() {
   const [xAxis, setXAxis] = useState(0);
@@ -37,11 +39,11 @@ function Home() {
       <section className='work-section'>
           <h2 className='work-title'>Work</h2>
         <div className='projects-container'>
-          <img src={star} alt='star' className='star token-1' style={{transform:`rotate(${rotateDeg+70}deg)`}}/>
-          <img src={star} alt='star' className='star token-2' style={{transform:`rotate(-${rotateDeg+20}deg)`}}/>
-          <img src={star} alt='star' className='star token-3' style={{transform:`rotate(${rotateDeg+1}deg)`}}/>
-          <img src={star} alt='star' className='star token-4' style={{transform:`rotate(-${rotateDeg}deg)`}}/>
-          <img src={star} alt='star' className='star token-5' style={{transform:`rotate(${rotateDeg*10}deg)`}}/>
+          <FontAwesomeIcon className='star token-1' style={{transform:`rotate(${rotateDeg*10}deg)`}} icon={faCodeFork} />
+          <FontAwesomeIcon className='star token-2' style={{transform:`rotate(-${rotateDeg+20}deg)`}} icon={faCode}/>
+          <FontAwesomeIcon className='star token-3' style={{transform:`rotate(-${rotateDeg+1}deg)`}} icon={faQrcode}/>
+          <FontAwesomeIcon className='star token-4' style={{transform:`rotate(-${rotateDeg}deg)`}} icon={faTerminal} />
+          <FontAwesomeIcon className='star token-5' style={{transform:`rotate(${rotateDeg+10}deg)`}} icon={faMeteor}/>
           {projects.map((item)=>{
             return <Project key={item.id} {...item}/>
           })}          
@@ -50,7 +52,6 @@ function Home() {
       <section>
         <Stats/>
       </section>
-      
     </main>
 
   )
