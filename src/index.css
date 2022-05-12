@@ -15,6 +15,7 @@
     --linear-bg4: rgba(166, 242, 195, 0.5);
     --primary-section-color: black;
     --primary-section2-color: rgb(40, 34, 34);
+    --project-bg: rgba(0, 0, 0,0.2);
 }
 
 .dark-theme{
@@ -28,6 +29,7 @@
     --linear-bg4: rgba(166, 242, 195, 0.5);
     --primary-section-color: black;
     --primary-section2-color: rgb(40, 34, 34);
+    --project-bg: rgba(0, 0, 0,0.2);
 }
 .light-theme{
     --primary-bg-color: white;
@@ -39,7 +41,8 @@
     --linear-bg3: rgba(182, 228, 108, 0.5);
     --linear-bg4: rgba(166, 242, 233, 0.5);
     --primary-section-color: white;
-    --primary-section2-color: rgb(237, 200, 200);
+    --primary-section2-color: rgb(243, 243, 243);
+    --project-bg: rgba(255, 255, 255, 0.502);
 }
 
 body{
@@ -54,11 +57,13 @@ li{
 
 a{
     text-decoration: none;
+    color: var(--primary-color);
 }
 
 button{
     all: unset;
 }
+
 
 /*NAV*/
 .nav-content{
@@ -95,9 +100,11 @@ button{
 }
 
 .theme-btn{
+    text-align: center;
+    margin: 19px 0px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
-    width: fit-content;
+    width: 151px;
     height: fit-content;
     padding: 5px;
     font-size: smaller;
@@ -129,15 +136,24 @@ button{
 }
 
 .work-section{
+    text-align: center;
+    border-radius: 5px;
+    height: fit-content;
+    width: auto;
+    padding: 20px;
+    margin-top: 25px;
+    background-color: var(--primary-section2-color);
+}
+
+.projects-container{
+    position:relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    border-radius: 5px;
-    height: fit-content;
-    width: fit-content;
-    padding: 10px;
-    background-color: var(--primary-section-color);
+    justify-content: center;
+    z-index: 1;
 }
+
 
 .home-title{
     font-family: 'Zen Loop', cursive;
@@ -147,33 +163,91 @@ button{
     font-size: 35px;
 }
 
-.work-title-container{
-    padding: 10px;
+.work-title{
+    font-family: 'Zen Loop', cursive;
+    font-size: 50px;
 }
-.background-token{
+
+@media (max-width:400px) {
+    .home-title{
+        font-size: 75px;
+    }
+}
+
+
+.star{
+    transition: all 1s ease-in-out;
+    z-index: 0;
+    position: absolute;
+    opacity: 0.7;
+}
+.token-1{
+    margin: 0% 0% 0% 0%;
+    height: 40px;
+    width: 40px;
+}
+.token-2{
+    margin: 10% 0% 0% 70%;
+    height: 80px;
+    width: 80px;
+}
+.token-3{
+    margin: 20% 70% 0% 0%;
+    height: 200px;
+    width: 200px;
+}
+.token-4{
+    margin: 5% 0% 0% 55%;
+    height: 350px;
+    width: 350px;
+}
+.token-5{
+    margin: -5% 55% 0% 0%;
     height: 50px;
     width: 50px;
-    border: 1px solid rgba(199, 194, 56, 0.543);
-    border-radius: 5px;
-    transition: all 1s ease-in-out;
-    position: absolute;
-    z-index: 1;
 }
-.background-token-2{
-    height: 25px;
-    width: 25px;
-    border: 1px solid rgba(244, 114, 9, 0.543);
-    border-radius: 5px;
-    transition: all 1s ease-in-out;
-    position: absolute;
-    z-index: 1;
+
+/*project component*/
+.project-article{
+    position: relative;
+    height: fit-content;
+    width: 350px;
+    border-radius: 25px;
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px;
+    transition: all 0.3s ease-in-out;
+    z-index: 2;
 }
-.background-token-3{
-    height: 12px;
-    width: 12px;
-    border: 1px solid rgba(199, 194, 56, 0.543);
-    border-radius: 5px;
-    transition: all 1s ease-in-out;
-    position: absolute;
-    z-index: 1;
+.project-article:hover{
+    padding: 7px;
+    margin: 13px;
+    box-shadow: 5px 5px 0px var(--secondary-bg-color);
+}
+
+.project-info-container{
+    z-index: 3;
+    background-color: var(--project-bg);
+    backdrop-filter: blur(2px);
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+}
+.project-info-container:hover{
+    backdrop-filter: blur(8px);
+}
+
+.project-title{
+    font-family: 'Zen Loop', cursive;
+    font-size: 35px;
+}
+
+.small-para{
+    font-size: 11px;
+}
+
+@media (max-width:500px) {
+    .project-article{
+        width: 250px;
+    }
 }

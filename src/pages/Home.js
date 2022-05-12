@@ -1,4 +1,8 @@
 import React, {useState, useRef, useEffect} from 'react'
+import projects from '../projectsData'
+import Project from '../components/Project'
+import star from '../images/star.svg'
+import Stats from '../components/Stats'
 
 function Home() {
   const [xAxis, setXAxis] = useState(0);
@@ -17,11 +21,9 @@ function Home() {
       return (oldNum + 1)
     })
   }
-  console.log(rotateDeg);
   useEffect(()=>{
     const heroImage = document.querySelector('.home-section');
     heroImage.addEventListener('mousemove', moveBG)   
-    //const doc = document;
     document.addEventListener('scroll', getScroll)
   }, [])
 
@@ -33,14 +35,20 @@ function Home() {
         <h3 className='home-title-para'>Creative, keen and business minded</h3>
       </section>
       <section className='work-section'>
-        <div className='work-title-container'>
-          <span className='background-token' style={{transform:`rotate(${rotateDeg}deg)`}}/>
-          <span className='background-token-2' style={{transform:`rotate(${rotateDeg+10}deg)`}}/>
-          <span className='background-token-3' style={{transform:`rotate(${rotateDeg+20}deg)`}}/>          
-          <h2>Work</h2>
+          <h2 className='work-title'>Work</h2>
+        <div className='projects-container'>
+          <img src={star} alt='star' className='star token-1' style={{transform:`rotate(${rotateDeg+70}deg)`}}/>
+          <img src={star} alt='star' className='star token-2' style={{transform:`rotate(-${rotateDeg+20}deg)`}}/>
+          <img src={star} alt='star' className='star token-3' style={{transform:`rotate(${rotateDeg+1}deg)`}}/>
+          <img src={star} alt='star' className='star token-4' style={{transform:`rotate(-${rotateDeg}deg)`}}/>
+          <img src={star} alt='star' className='star token-5' style={{transform:`rotate(${rotateDeg*10}deg)`}}/>
+          {projects.map((item)=>{
+            return <Project key={item.id} {...item}/>
+          })}          
         </div>
-        
-
+      </section>
+      <section>
+        <Stats/>
       </section>
       
     </main>
