@@ -6,7 +6,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 function About() {
   return (
     <section className='about-section'>
-      <img className='profile-img' src={profileImage}/>
+      <img className='profile-img' alt='profile of Nikolaz' src={profileImage}/>
       <div>
         <h2 className='work-title'>Hello!</h2>
         <p className='about-para'>My name is Nikolaz and I'm a front end developper from France.</p>

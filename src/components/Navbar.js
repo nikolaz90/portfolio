@@ -19,7 +19,7 @@ function Navbar() {
           <li> <Link className={`nav-link ${isActive === 0 && 'active-nav'}`} to='/' onClick={()=>handleActivePage(0)}>Home</Link> </li>
           <li> <Link className={`nav-link ${isActive === 1 && 'active-nav'}`} to='/about' onClick={()=>handleActivePage(1)}>About</Link></li>
         </ul>
-        <button className='theme-btn' onClick={setDarkTheme}>{isDark ? <small>Light mode</small>:<small>Dark mode</small>}</button>
+        <span className='theme-btn' onClick={setDarkTheme}>{isDark ? <small>Light mode</small>:<small>Dark mode</small>}</span>
       </div>
     </nav>
   )

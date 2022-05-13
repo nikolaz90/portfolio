@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useContext, useReducer} from 'react'
+import React, {useEffect, useContext, useReducer} from 'react'
 import reducer from './reducer';
 
 
@@ -46,8 +46,6 @@ const AppProvider = ({children}) =>{
     useEffect(()=>{
         fetchData()
     },[])
-
-    //console.log(state)
     
     return <AppContext.Provider value={{
         ...state,
