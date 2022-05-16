@@ -15,7 +15,7 @@ function About() {
         </p>        
         <p className='about-para'>
           With 2 years experience in web developpment and many more learning to code, it is always
-          really motivating to start bew projects. So get in touch and drop me a line.
+          really motivating to start new projects. So get in touch and drop me a line.
         </p>
         <a href='mailto:nikolaz.90@laposte.net'><FontAwesomeIcon icon={faEnvelope}/></a>
       </div>
