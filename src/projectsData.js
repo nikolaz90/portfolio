@@ -1,6 +1,13 @@
 
 const projects = [{
     id: 1, 
+    title: 'Pascale Art',
+    tech: 'react.js', 
+    img: 'https://images.ctfassets.net/fol21n7kmioh/2yVWWXH8Kd9pf0ytw9kMrz/0adc0212d45237d11615a3acb4ca2b43/img1.jpg',
+    description: "An artist's personal/professional website to show and display art works using a headless CMS for all the content",
+    link: 'https://pascalestaceyart.com',
+},{
+    id: 2, 
     title: 'Savings tool',
     tech: 'react.js', 
     img: 'https://cdn.pixabay.com/photo/2017/10/25/19/45/piggy-bank-2889042_1280.jpg',
@@ -8,7 +15,7 @@ const projects = [{
     link: 'https://monsieurbaguettes.com/umbrelladay/',
 },
 {
-    id: 2, 
+    id: 3, 
     title: 'Cocktail recipes',
     tech: 'react.js', 
     img: 'https://cdn.pixabay.com/photo/2017/08/03/21/48/drinks-2578446_1280.jpg',
@@ -16,7 +23,7 @@ const projects = [{
     link: 'https://monsieurbaguettes.com/coqtails/',
 },
 {
-    id: 3, 
+    id: 4, 
     title: 'E-commerce',
     tech: 'JavaScript', 
     img: 'https://cdn.pixabay.com/photo/2016/11/19/18/06/feet-1840619_1280.jpg',
@@ -24,7 +31,7 @@ const projects = [{
     link: 'https://monsieurbaguettes.com/sneakers.html',
 },
 {
-    id: 4, 
+    id: 5, 
     title: 'Spelling game',
     tech: 'JavaScript', 
     img: 'https://cdn.pixabay.com/photo/2015/08/13/01/00/keyboard-886462_1280.jpg',
@@ -32,7 +39,7 @@ const projects = [{
     link: 'https://monsieurbaguettes.com/Speel.html',
 },
 {
-    id: 5, 
+    id: 6, 
     title: 'Personal blog',
     tech: 'JavaScript', 
     img: 'https://cdn.pixabay.com/photo/2016/01/09/18/27/camera-1130731_1280.jpg',
