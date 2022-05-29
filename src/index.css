@@ -49,6 +49,8 @@ body{
     background-color: var(--primary-bg-color);
     color: var(--primary-color);
     font-family: 'Kumbh Sans', sans-serif;
+    max-width: 1200px;
+    margin: auto;
 }
 
 li{
@@ -133,6 +135,7 @@ button{
     background-size: 120%;
     text-align: center;
     font-family: 'Zen Loop', cursive;
+    margin: 25px auto;
 }
 
 .work-section{
@@ -168,9 +171,18 @@ button{
     font-size: 50px;
 }
 
-@media (max-width:400px) {
+@media (max-width:600px) {
     .home-title{
-        font-size: 75px;
+      font-size: 75px;  
+    } 
+}
+
+@media (max-width:500px) {
+    .home-title{
+        font-size: 55px;
+    }
+    .home-title-para{
+        font-size: 25px;
     }
 }
 
@@ -309,6 +321,8 @@ button{
     padding: 20px;
     margin-top: 25px;
     background-color: var(--primary-section2-color);
+    max-width: 1000px;
+    margin: 25px auto;
 }
 
 .profile-img{
@@ -320,8 +334,6 @@ button{
 .about-para{
     width: 60ch;
 }
-
-
 
 @media (max-width:700px) {
     .about-para{
