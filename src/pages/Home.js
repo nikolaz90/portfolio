@@ -10,6 +10,7 @@ function Home() {
   const [xAxis, setXAxis] = useState(0);
   const [yAxis, setYAxis] = useState(0);
   const [rotateDeg, setRotateDeg] = useState(1);
+  const headerTitle = '{ Web Developper }'
 
   const container = useRef(null)
 
@@ -33,8 +34,8 @@ function Home() {
   return (
     <main>
       <section ref={container} className='home-section' style={{backgroundPosition:`${yAxis}px ${xAxis}px`}}>
-        <h2 className='home-title'>Web Developper</h2>
-        <h3 className='home-title-para'>Creative, keen and business minded</h3>
+        <h2 className='home-title'>{headerTitle}</h2>
+        <h3 className='home-title-para'>Creative, keen and business minded front-end developper</h3>
       </section>
       <section className='work-section'>
           <h2 className='work-title'>Work</h2>

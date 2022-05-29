@@ -157,7 +157,7 @@ button{
 
 .home-title{
     font-family: 'Zen Loop', cursive;
-    font-size: 100px;
+    font-size: 90px;
 }
 .home-title-para{
     font-size: 35px;
@@ -175,7 +175,7 @@ button{
 }
 
 .star{
-    transition: all 1s ease-in-out;
+    transition: all 3s ease-in-out;
     z-index: 0;
     position: absolute;
     opacity: 0.7;
