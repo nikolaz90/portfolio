@@ -15,7 +15,7 @@
     --linear-bg4: rgba(166, 242, 195, 0.5);
     --primary-section-color: black;
     --primary-section2-color: rgb(40, 34, 34);
-    --project-bg: rgba(0, 0, 0,0.2);
+    --project-bg: rgba(0, 0, 0, 0.4);
 }
 
 .dark-theme{
@@ -29,7 +29,7 @@
     --linear-bg4: rgba(166, 242, 195, 0.5);
     --primary-section-color: black;
     --primary-section2-color: rgb(40, 34, 34);
-    --project-bg: rgba(0, 0, 0,0.2);
+    --project-bg: rgba(0, 0, 0,0.4);
 }
 .light-theme{
     --primary-bg-color: white;
@@ -42,7 +42,7 @@
     --linear-bg4: rgba(166, 242, 233, 0.5);
     --primary-section-color: white;
     --primary-section2-color: rgb(243, 243, 243);
-    --project-bg: rgba(255, 255, 255, 0.502);
+    --project-bg: rgba(255, 255, 255, 0.6);
 }
 
 body{
@@ -256,12 +256,12 @@ button{
 .project-info-container{
     z-index: 3;
     background-color: var(--project-bg);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(0px);
     border-radius: 25px;
     transition: all 0.3s ease-in-out;
 }
 .project-info-container:hover{
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(10px);
 }
 
 .project-title{

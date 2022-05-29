@@ -3,7 +3,7 @@ import React from 'react'
 function Project({title, tech, img, description, link}) {
 
   return (
-      <a href={link}>
+      <a target='_blank' rel='noreferrer' href={link}>
         <article className='project-article' style={{backgroundImage:`url(${img})`}}>
             <div className='project-info-container'>
                 <h3 className='project-title'>{title}</h3>
