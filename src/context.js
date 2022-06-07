@@ -22,9 +22,9 @@ const AppProvider = ({children}) =>{
     }
 
     useEffect(()=>{
-        if(state.isDark === true){
+        if(state.isDark === false){
             document.documentElement.className = 'dark-theme'
-        } else if(state.isDark === false){
+        } else if(state.isDark === true){
           document.documentElement.className = 'light-theme'  
         }
     }, [state.isDark])
