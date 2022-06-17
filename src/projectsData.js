@@ -18,7 +18,7 @@ const projects = [{
     id: 3, 
     title: 'Cocktail recipes',
     tech: 'react.js', 
-    img: 'https://www.thecocktaildb.com/images/media/drink/2x8thr1504816928.jpg',
+    img: 'https://cdn.pixabay.com/photo/2014/11/25/16/29/strawberry-545371_1280.jpg',
     description: 'A tool that provides hundreds of cocktail recipes. Some classic and some very inventive! I added a random cocktail function for those looking for a surprise or some inspiration.',
     link: 'https://monsieurbaguettes.com/coqtails/',
 },
