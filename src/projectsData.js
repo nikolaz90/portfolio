@@ -10,7 +10,7 @@ const projects = [{
     id: 2, 
     title: 'Savings tool',
     tech: 'react.js', 
-    img: 'https://cdn.pixabay.com/photo/2017/10/25/19/45/piggy-bank-2889042_1280.jpg',
+    img: 'https://cdn.pixabay.com/photo/2016/08/15/17/38/piggy-bank-1595992_1280.jpg',
     description: 'Calculate compound interest, monthly savings and inflation over any chosen time. This tool provides 4 calculators to help users with personal finances. The target audience is people who have little to no savings and the objective is to give them some idea of where to start.',
     link: 'https://monsieurbaguettes.com/umbrelladay/',
 },

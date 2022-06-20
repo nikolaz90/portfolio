@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Chakra+Petch:wght@300&family=Kumbh+Sans:wght@700&family=Noto+Sans+Mono&family=Zen+Loop&display=swap');
-
 *{
     padding: 5px;
 }
@@ -14,7 +13,7 @@
     --linear-bg4: rgba(166, 242, 195, 0.5);
     --primary-section-color: black;
     --primary-section2-color: rgb(40, 34, 34);
-    --project-bg: rgba(255, 255, 255, 0.6);
+    --project-bg: rgba(255, 255, 255, 0.4);
 }
 
 .dark-theme{
@@ -41,7 +40,7 @@
     --linear-bg4: rgba(166, 242, 233, 0.5);
     --primary-section-color: white;
     --primary-section2-color: rgb(243, 243, 243);
-    --project-bg: rgba(255, 255, 255, 0.8);
+    --project-bg: rgba(255, 255, 255, 0.5);
 }
 
 body{
@@ -68,44 +67,27 @@ button{
 
 /*NAV*/
 .nav-content{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .nav-links-container{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 150px;
 }
 
 .nav-logo{
-    color: var(--primary-color)
+    color: var(--primary-color);
+
 }
 
 .nav-link{
     color: var(--primary-color);
-    -webkit-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
 .nav-link:hover{
@@ -122,12 +104,8 @@ button{
     text-align: center;
     margin: 19px 0px;
     cursor: pointer;
-    -webkit-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     width: 151px;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
     height: fit-content;
     padding: 5px;
     font-size: smaller;
@@ -140,13 +118,8 @@ button{
 
 @media (max-width:600px) {
     .nav-content{
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -154,12 +127,8 @@ button{
 /*Home*/
 .home-section{
     border-radius: 5px;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
     height: fit-content;
     width: auto;
-    background: -webkit-gradient(linear, left top, right top, from(var(--linear-bg4)), color-stop(var(--linear-bg2)), color-stop(var(--linear-bg3)), to(var(--linear-bg4)));
-    background: -o-linear-gradient(left, var(--linear-bg4), var(--linear-bg2), var(--linear-bg3), var(--linear-bg4));
     background: linear-gradient(90deg, var(--linear-bg4), var(--linear-bg2), var(--linear-bg3), var(--linear-bg4));
     background-repeat: repeat;
     background-size: 120%;
@@ -171,8 +140,6 @@ button{
 .work-section{
     text-align: center;
     border-radius: 5px;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
     height: fit-content;
     width: auto;
     padding: 20px;
@@ -182,18 +149,10 @@ button{
 
 .projects-container{
     position:relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     z-index: 1;
 }
 
@@ -208,7 +167,7 @@ button{
 
 .work-title{
     font-family: 'Zen Loop', cursive;
-    font-size: 50px;
+    font-size: 70px;
 }
 
 @media (max-width:600px) {
@@ -227,12 +186,10 @@ button{
 }
 
 .star{
-    -webkit-transition: all 3s ease-in-out;
-    -o-transition: all 3s ease-in-out;
     transition: all 3s ease-in-out;
     z-index: 0;
     position: absolute;
-    opacity: 0.2;
+    opacity: 0.1;
 }
 .token-1{
     margin: 0% 0% 0% 0%; 
@@ -291,8 +248,6 @@ button{
 /*project component*/
 .project-article{
     position: relative;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
     height: fit-content;
     width: 350px;
     border-radius: 25px;
@@ -300,36 +255,36 @@ button{
     background-repeat: no-repeat;
     background-size: cover;
     margin: 10px;
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     z-index: 2;
 }
 .project-article:hover{
     padding: 7px;
     margin: 13px;
-    -webkit-box-shadow: 5px 5px 0px var(--secondary-bg-color);
-            box-shadow: 5px 5px 0px var(--secondary-bg-color);
+    box-shadow: 5px 5px 0px var(--secondary-bg-color);
 }
 
 .project-info-container{
     z-index: 3;
     background-color: var(--project-bg);
-    -webkit-backdrop-filter: blur(0px);
-            backdrop-filter: blur(0px);
+    backdrop-filter: blur(0px);
     border-radius: 25px;
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    overflow: hidden;
 }
 .project-info-container:hover{
-    -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
 
 .project-title{
     font-family: 'Zen Loop', cursive;
     font-size: 60px;
+}
+
+.project-info-tab{
+    margin: -20px;
+    background-color: rgba(248, 248, 248, 0.8);
+    padding: 20px;
 }
 
 .small-para{
@@ -341,18 +296,10 @@ button{
 }
 
 .stats-reiteration{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     font-size: 12px;
 }
 
@@ -361,8 +308,7 @@ button{
         width: 250px;
     }
     .stats-reiteration{
-        -ms-flex-wrap: nowrap;
-            flex-wrap: nowrap;
+        flex-wrap: nowrap;
         font-size: 9px;
     }
 }
@@ -371,21 +317,11 @@ button{
 
 .about-section{
     text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     border-radius: 5px;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
     height: fit-content;
     width: auto;
     padding: 20px;
@@ -423,29 +359,17 @@ button{
 
 /*Footer*/
 .footer{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
 }
 .footer-icon{
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 .footer-icon:hover{
     color: rgb(239, 239, 102);
 }
 .github-icon{
-    -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-            transform: rotate(90deg);
+    transform: rotate(90deg);
 }
