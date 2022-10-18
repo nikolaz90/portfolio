@@ -1,0 +1,13 @@
+.overlay-menu{
+    display: none;
+    transition: all 2s ease-in-out;
+}
+
+.overlay-activated{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: fade-in 0.3s;
+}

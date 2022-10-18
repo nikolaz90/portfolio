@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Chakra+Petch:wght@300&family=Kumbh+Sans:wght@700&family=Noto+Sans+Mono&family=Zen+Loop&display=swap');
+@import url('hamburger.css');
+@import url('overlay.css');
+
 *{
     padding: 5px;
 }
@@ -66,7 +69,79 @@ button{
 
 
 /*NAV*/
-.nav-content{
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar{
+    position: sticky;
+    max-width: 1200px;
+    margin: auto;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    justify-content: space-between;
+}
+.nav-link-container{
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.nav-title{
+    font-size:xx-large;
+    font-weight: 100;
+    margin: 0px 0px 0px 5px;
+    width: 100%;
+    color: var(--primary-color);
+}
+.nav-title-grey{
+    color: rgb(178, 178, 178);
+    right: 0px;
+    margin-left: -0.3rem;
+}
+.nav-link{
+    text-transform: uppercase;
+    font-size:smaller;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    color: var(--primary-color);
+}
+.nav-link:hover{
+    cursor: pointer;
+    color: rgb(178, 178, 178);
+}
+
+.title-container{
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+@media (max-width: 1000px) {
+    .nav-title{
+        font-size: 1.5rem;
+    }
+    .mob-nav{
+        display: flex;
+    }
+    .nav-link-container{
+        flex-direction: column;
+        align-items: center;
+        display: none;   
+    } 
+    .nav-title-grey{
+        display: none;
+    }
+}
+
+/* .nav-content{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -95,7 +170,7 @@ button{
 }
 .nav-link:hover{
     border-bottom: 2px var(--primary-color) solid;
-}
+} */
 
 .active-nav{
     font-size: small;
