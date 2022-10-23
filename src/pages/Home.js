@@ -17,8 +17,8 @@ function Home() {
   const container = useRef(null)
 
   const moveBG=(e)=>{
-    setXAxis((e.clientY / 20) -10);
-    setYAxis((e.clientX / 20) -50)
+    setXAxis((e.clientY / 20) - 10)
+    setYAxis((e.clientX / 20) - 50)
   }
 
   const getScroll = (e) =>{
