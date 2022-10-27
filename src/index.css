@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Chakra+Petch:wght@300&family=Kumbh+Sans:wght@700&family=Noto+Sans+Mono&family=Zen+Loop&display=swap');
 @import url('hamburger.css');
 @import url('overlay.css');
+@import url('home_page.css');
 
 *{
     padding: 5px;
@@ -203,130 +204,7 @@ button{
 
 
 /*Home*/
-.home-section{
-    border-radius: 5px;
-    height: fit-content;
-    width: auto;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(90, 90, 90, 0.7)),
-        url("https://cdn.pixabay.com/photo/2018/01/29/13/03/internet-3116062_1280.jpg");    
-    background-repeat: repeat;
-    background-size: 120%;
-    background-position: top;
-    text-align: center;
-    font-family: 'Zen Loop', cursive;
-    color: white;
-    margin: 25px auto;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-}
 
-.work-section{
-    text-align: center;
-    border-radius: 5px;
-    height: fit-content;
-    width: auto;
-    padding: 20px;
-    margin-top: 25px;
-    background-color: var(--primary-section2-color);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-}
-
-.projects-container{
-    position:relative;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    z-index: 1;
-}
-
-
-.home-title{
-    font-family: 'Zen Loop', cursive;
-    font-size: 90px;
-}
-.home-title-para{
-    font-size: 35px;
-}
-
-.work-title{
-    font-family: 'Zen Loop', cursive;
-    font-size: 70px;
-}
-
-@media (max-width:600px) {
-    .home-title{
-      font-size: 75px;  
-    } 
-}
-
-@media (max-width:500px) {
-    .home-title{
-        font-size: 55px;
-    }
-    .home-title-para{
-        font-size: 25px;
-    }
-}
-
-.star{
-    transition: all 3s ease-in-out;
-    z-index: 0;
-    position: absolute;
-    opacity: 0.1;
-}
-.token-1{
-    margin: 0% 0% 0% 0%; 
-    height: 40px;
-    width: 40px;
-}
-.token-2{
-    margin: 10% 0% 0% 70%; 
-    height: 80px;
-    width: 80px;
-}
-.token-3{
-    margin: 20% 70% 0% 0%; 
-    height: 200px;
-    width: 200px;
-}
-.token-4{
-    margin: 50% 0% 0% 0%; 
-    height: 350px;
-    width: 350px;
-}
-.token-5{
-    margin: -5% 55% 0% 0%;
-    height: 50px;
-    width: 50px;
-}
-
-@media (max-width:700px) {
-    .token-1{
-        margin: 0% 0% 0% 0%;
-        height: 40px;
-        width: 40px;
-    }
-    .token-2{
-        margin: 90% 0% 0% 80%;
-        height: 120px;
-        width: 120px;
-    }
-    .token-3{
-        margin: 20% 70% 0% 0%;
-        height: 90px;
-        width: 90px;
-    }
-    .token-4{
-        margin: 50% 0% 0% 0%;
-        height: 90px;
-        width: 90px;
-    }
-    .token-5{
-        margin: -5% 55% 0% 0%;
-        height: 50px;
-        width: 50px;
-    }
-}
 
 /*project component*/
 .project-article{
