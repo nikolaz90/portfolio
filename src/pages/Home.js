@@ -1,7 +1,6 @@
 import React, {useState, useRef, useEffect} from 'react'
 import projects from '../projectsData'
 import Project from '../components/Project'
-//import star from '../images/star.svg'
 import Stats from '../components/Stats'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCodeFork, faCode, faQrcode, faTerminal,faMeteor } from '@fortawesome/free-solid-svg-icons'
@@ -17,8 +16,8 @@ function Home() {
   const container = useRef(null)
 
   const moveBG=(e)=>{
-    setXAxis((e.clientY / 20) - 10)
-    setYAxis((e.clientX / 20) - 50)
+    setXAxis((e.clientY / 50) - 10)
+    setYAxis((e.clientX / 50) - 50)
   }
 
   const getScroll = (e) =>{
@@ -36,7 +35,7 @@ function Home() {
   return (
     <main>
       <section ref={container} className='home-section' style={{backgroundPosition:`${yAxis}px ${xAxis}px`}}>
-        <h2 className='home-title'>{screenWidth > 400 ? headerTitle: headerTitleSmall}</h2>
+        <h2 className='home-title'>{screenWidth > 560 ? headerTitle: headerTitleSmall}</h2>
         <h3 className='home-title-para'>Creative, keen and business minded front-end developper</h3>
       </section>
       <section className='work-section'>
