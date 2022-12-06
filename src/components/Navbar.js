@@ -5,7 +5,7 @@ import {useGlobalContext} from '../context'
 function Navbar() {
   const {isDark, setDarkTheme} = useGlobalContext()
 
-  const [isActive, setIsActive] = useState(null); 
+  const [isActive, setIsActive] = useState(0); 
   
   const handleActivePage = (pageNum)=>{
     setIsActive(pageNum);
@@ -30,22 +30,22 @@ function Navbar() {
     <>
       <nav className='navbar flex-row'>
         <div className='title-container flex-row'>
-          <Link to='/' className='nav-title-link'><h1 className='nav-title'>web_dev_niko<span className='nav-title-grey'>laz.</span></h1></Link>
+          <Link to='/' className='nav-title-link' onClick={()=>handleActivePage(0)}><h1 className='nav-title'>web_dev_niko<span className='nav-title-grey'>laz.</span></h1></Link>
             <input id='hamburger-checkbox' type='checkbox'/>
-            <label className='hamburger' onClick={handleClickLink} forHtml='hamburger-checkbox'>
+            <label className='hamburger' onClick={handleClickLink} forhtml='hamburger-checkbox'>
               <div className='hamburger-line'></div>
             </label>
         </div>
-        <ul class='nav-link-container flex-row'>
-          <Link to='/'><li id="nav-link" className='nav-link'>Home</li></Link>
-          <Link to='/about'><li id="nav-link" className='nav-link'>About</li></Link>
+        <ul className='nav-link-container flex-row'>
+          <Link to='/'><li id="nav-link" className={`nav-link ${isActive === 1 ? 'active-nav' : ''}`} onClick={()=>handleActivePage(1)}>Home</li></Link>
+          <Link to='/about'><li id="nav-link" className={`nav-link ${isActive === 2 ? 'active-nav' : ''}`} onClick={()=>handleActivePage(2)}>About</li></Link>
           <span onClick={setDarkTheme}>{isDark ? <li className='nav-link'>Dark mode</li>:<li className='nav-link'>Light mode</li>}</span>
         </ul>
       </nav>
       <div id="overlay" className='overlay-menu'>
-        <ul class='nav-link-container-overlay'>
-          <Link to='/' onClick={handleClickLink}><li class='nav-link'>Home</li></Link>
-          <Link to='/about' onClick={handleClickLink}><li class='nav-link'>About</li></Link>
+        <ul className='nav-link-container-overlay'>
+          <Link to='/' onClick={handleClickLink}><li className='nav-link'>Home</li></Link>
+          <Link to='/about' onClick={handleClickLink}><li className='nav-link'>About</li></Link>
           <span onClick={setDarkTheme}>{isDark ? <li className='nav-link'>Dark mode</li>:<li className='nav-link'>Light mode</li>}</span>
         </ul>
       </div>
