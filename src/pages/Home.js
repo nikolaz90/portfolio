@@ -36,7 +36,7 @@ function Home() {
     <main>
       <section ref={container} className='home-section' style={{backgroundPosition:`${yAxis}px ${xAxis}px`}}>
         <h2 className='home-title'>{screenWidth > 560 ? headerTitle: headerTitleSmall}</h2>
-        <h3 className='home-title-para'>Creative, keen and business minded front-end developer</h3>
+        <h3 className='home-title-para'>Creative, empathetic and business minded full-stack developer</h3>
       </section>
       <section className='work-section'>
           <h2 className='work-title'>Work</h2>
