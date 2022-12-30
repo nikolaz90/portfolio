@@ -9,9 +9,9 @@ const projects = [{
 },{
     id: 2, 
     title: 'Pascale Art',
-    tech: 'react.js', 
+    tech: 'react.js / ruby on rails', 
     img: 'https://images.ctfassets.net/fol21n7kmioh/2yVWWXH8Kd9pf0ytw9kMrz/0adc0212d45237d11615a3acb4ca2b43/img1.jpg',
-    description: "An artist's personal/professional website to show and display art works using a headless CMS for all the content",
+    description: "An artist's website to show and display art works using a ruby on rails app content manager exposing an api to the react app",
     link: 'https://pascalestaceyart.com',
 },{
     id: 3, 
