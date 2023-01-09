@@ -40,9 +40,9 @@ const projects = [{
     id: 6, 
     title: 'E-commerce',
     tech: 'JavaScript', 
-    img: 'https://monsieurbaguettes.com/image-product-1.jpg',
+    img: 'https://monsieurbaguettes.com/sneakers/images/image-product-1.jpg',
     description: 'front-end mentor challenge, to integrate a pixel perfect page with functioning cart',
-    link: 'https://monsieurbaguettes.com/sneakers.html',
+    link: 'https://monsieurbaguettes.com/sneakers',
 },
 {
     id: 7, 
@@ -50,13 +50,13 @@ const projects = [{
     tech: 'JavaScript', 
     img: 'https://cdn.pixabay.com/photo/2015/08/13/01/00/keyboard-886462_1280.jpg',
     description: 'This is a spelling game designed for helping my students have fun with increasingly challenging spellings',
-    link: 'https://monsieurbaguettes.com/Speel.html',
+    link: 'https://monsieurbaguettes.com/speel',
 },
 {
     id: 8, 
     title: 'Personal blog',
     tech: 'JavaScript', 
-    img: 'https://monsieurbaguettes.com/DSC01587.JPG',
+    img: 'https://monsieurbaguettes.com/images/DSC01587.JPG',
     description: 'This is a personal blog I have been using for photography and side projects',
     link: 'https://monsieurbaguettes.com/',
 }]
