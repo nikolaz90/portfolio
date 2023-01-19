@@ -36,9 +36,10 @@ function Home() {
     <main>
       <section ref={container} className='home-section' style={{backgroundPosition:`${yAxis}px ${xAxis}px`}}>
         <h2 className='home-title'>{screenWidth > 560 ? headerTitle: headerTitleSmall}</h2>
-        <h3 className='home-title-para'>Creative, empathetic and business minded full-stack developer</h3>
+        <h3 className='home-title-para'>Creative, empathetic and business minded web developer</h3>
+        <a href="#work-section" className='scroll-down-link'><small>scroll down</small></a>
       </section>
-      <section className='work-section'>
+      <section className='work-section' id='work-section'>
           <h2 className='work-title'>Work</h2>
         <div className='projects-container'>
           <FontAwesomeIcon className='star token-1' style={{transform:`rotate(${rotateDeg*10}deg)`}} icon={faCodeFork} />
@@ -50,9 +51,6 @@ function Home() {
             return <Project key={item.id} {...item}/>
           })}          
         </div>
-      </section>
-      <section>
-        <Stats/>
       </section>
     </main>
 

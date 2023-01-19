@@ -15,6 +15,14 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
+.scroll-down-link {
+    color: white;
+    cursor: pointer;
+}
+.scroll-down-link:hover {
+    color: white;
+}
+
 @media (max-width:480px) {
     .home-section{
         background-size: 300%;

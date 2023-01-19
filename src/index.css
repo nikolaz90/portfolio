@@ -5,7 +5,9 @@
 
 *{
     padding: 5px;
+    scroll-behavior: smooth;
 }
+
 :root{
     --primary-bg-color: white;
     --primary-color: black;
@@ -328,7 +330,7 @@ button{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: end;
+    justify-content: flex-end;
 }
 .footer-icon{
     transition: all 0.3s ease-in-out;
