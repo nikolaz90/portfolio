@@ -1,11 +1,11 @@
 
 const projects = [{
     id: 1, 
-    title: 'Regularly',
+    title: 'Papatoo',
     tech: 'ruby on rails', 
-    img: 'https://cdn.pixabay.com/photo/2017/03/18/04/20/app-2153173_1280.png',
-    description: "A simple web app to help people get into saving and for tracking these with an account",
-    link: 'https://mbs-regularly.fly.dev/',
+    img: 'https://cdn.pixabay.com/photo/2017/09/05/11/37/baby-2717347_1280.jpg',
+    description: "A blog and community platform that allows parents to meet and chat with an interactive map",
+    link: 'https://papatoo.herokuapp.com/',
 },{
     id: 2, 
     title: 'Pascale Art',
@@ -15,6 +15,13 @@ const projects = [{
     link: 'https://pascalestaceyart.com',
 },{
     id: 3, 
+    title: 'Regularly',
+    tech: 'ruby on rails', 
+    img: 'https://cdn.pixabay.com/photo/2017/03/18/04/20/app-2153173_1280.png',
+    description: "A simple web app to help people get into saving and for tracking these with an account",
+    link: 'https://mbs-regularly.fly.dev/',
+},{
+    id: 4, 
     title: 'Savings tool',
     tech: 'react.js', 
     img: 'https://cdn.pixabay.com/photo/2016/08/15/17/38/piggy-bank-1595992_1280.jpg',
@@ -22,14 +29,14 @@ const projects = [{
     link: 'https://monsieurbaguettes.com/umbrelladay/',
 },
 {
-    id: 4, 
+    id: 5, 
     title: 'Cocktail recipes',
     tech: 'react.js', 
     img: 'https://cdn.pixabay.com/photo/2014/11/25/16/29/strawberry-545371_1280.jpg',
     description: 'Hundreds of cocktail recipes. Some classic and some very inventive! I added a random cocktail function for those looking some inspiration.',
     link: 'https://monsieurbaguettes.com/coqtails/',
 },{
-    id: 5, 
+    id: 6, 
     title: 'Landing page',
     tech: 'html and css', 
     img: 'https://cdn.pixabay.com/photo/2022/09/18/15/37/elephants-7463340_1280.jpg',
@@ -37,7 +44,7 @@ const projects = [{
     link: 'https://monsieurbaguettes.com/landing_page/',
 },
 {
-    id: 6, 
+    id: 7, 
     title: 'E-commerce',
     tech: 'JavaScript', 
     img: 'https://monsieurbaguettes.com/sneakers/images/image-product-1.jpg',
@@ -45,7 +52,7 @@ const projects = [{
     link: 'https://monsieurbaguettes.com/sneakers',
 },
 {
-    id: 7, 
+    id: 8, 
     title: 'Spelling game',
     tech: 'JavaScript', 
     img: 'https://cdn.pixabay.com/photo/2015/08/13/01/00/keyboard-886462_1280.jpg',
@@ -53,7 +60,7 @@ const projects = [{
     link: 'https://monsieurbaguettes.com/speel',
 },
 {
-    id: 8, 
+    id: 9, 
     title: 'Personal blog',
     tech: 'JavaScript', 
     img: 'https://monsieurbaguettes.com/images/DSC01587.JPG',
