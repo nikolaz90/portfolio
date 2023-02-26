@@ -3,6 +3,7 @@ import profileImage from '../images/Image1.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import Stats from '../components/Stats'
+import TechUsed from '../components/TechUsed'
 
 const yearsOfExp = () => {
   const startedDevYear = new Date('1 september 2020').getFullYear()
@@ -22,11 +23,14 @@ function About() {
             My objective is to deliver the best solution to you and your organisation quickly.
           </p>        
           <p className='about-para'>
-            With {yearsOfExp()} years experience in web developpment and many more learning to code, it is always
+            With {yearsOfExp()} years experience in web developpment, it is always
             really motivating to start new projects. So get in touch and drop me a line.
           </p>
           <a href='mailto:nikolaz.90@laposte.net'><FontAwesomeIcon icon={faEnvelope}/></a>
         </div>
+      </section>
+      <section>
+        <TechUsed/>
       </section>
       <section>
         <Stats/>

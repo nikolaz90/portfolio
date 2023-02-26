@@ -2,6 +2,7 @@
 @import url('hamburger.css');
 @import url('overlay.css');
 @import url('home_page.css');
+@import url('tech_used.css');
 
 *{
     padding: 5px;
@@ -143,37 +144,6 @@ button{
         display: none;
     }
 }
-
-/* .nav-content{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 1rem;
-}
-
-.nav-links-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 150px;
-}
-
-.nav-logo{
-    color: var(--primary-color);
-
-}
-
-.nav-link{
-    color: var(--primary-color);
-    transition: all 0.2s ease-in-out;
-}
-.nav-link:hover{
-    border-bottom: 2px var(--primary-color) solid;
-} */
 
 .active-nav{
     font-size: small;

@@ -1,7 +1,6 @@
 import React, {useState, useRef, useEffect} from 'react'
 import projects from '../projectsData'
 import Project from '../components/Project'
-import Stats from '../components/Stats'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCodeFork, faCode, faQrcode, faTerminal,faMeteor } from '@fortawesome/free-solid-svg-icons'
 

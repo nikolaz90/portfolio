@@ -1,7 +1,6 @@
 import React, {useEffect, useContext, useReducer} from 'react'
 import reducer from './reducer';
 
-
 const AppContext = React.createContext()
 
 const initialState = {
@@ -12,7 +11,6 @@ const initialState = {
 
 const AppProvider = ({children}) =>{
     const [state, dispatch] = useReducer(reducer, initialState)
-    //const [data, setData] = useState([])
 
     const setDarkTheme = ()=> {
         dispatch({type:'SET_THEME'})
@@ -30,7 +28,6 @@ const AppProvider = ({children}) =>{
     }, [state.isDark])
 
     const url = 'https://api.github.com/users/nikolaz90/repos?per_page=100'
-
 
     const fetchData = async () => {
       try{
@@ -54,7 +51,6 @@ const AppProvider = ({children}) =>{
     {children}
     </AppContext.Provider>
 }
-
 
 export const useGlobalContext = () =>{
     return useContext(AppContext)
