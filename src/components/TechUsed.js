@@ -3,11 +3,16 @@ import techUsed from '../techUsedData'
 
 export default function TechUsed() {
   return (
-    <section>
+    <section className='tech-used-section'>
         <h3>Tech</h3>
         <div className='tech-used-container'>
             {techUsed.map((item) => {
-                return <img key={item.id} className='tech-used-icon' src={item.img} alt={item.tech}/>
+                return (
+                  <article className='tech-used-article'>
+                    <span>{item.tech}</span>
+                    <img key={item.id} className='tech-used-icon' src={item.img} alt={item.tech}/>
+                  </article>
+                )
             })}
         </div>
     </section>

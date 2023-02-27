@@ -3,6 +3,7 @@ import projects from '../projectsData'
 import Project from '../components/Project'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCodeFork, faCode, faQrcode, faTerminal,faMeteor } from '@fortawesome/free-solid-svg-icons'
+import TechUsed from '../components/TechUsed'
 
 function Home() {
   const [xAxis, setXAxis] = useState(0);
@@ -37,6 +38,9 @@ function Home() {
         <h2 className='home-title'>{screenWidth > 560 ? headerTitle: headerTitleSmall}</h2>
         <h3 className='home-title-para'>Creative, empathetic and business minded web developer</h3>
         <a href="#work-section" className='scroll-down-link'><small>scroll down</small></a>
+      </section>
+      <section>
+        <TechUsed/>
       </section>
       <section className='work-section' id='work-section'>
           <h2 className='work-title'>Work</h2>
