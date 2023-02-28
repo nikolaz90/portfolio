@@ -20,12 +20,17 @@ function About() {
           <h2 className='work-title'>Hello!</h2>
           <p className='about-para'>My name is Nikolaz and I'm a web developer from France.</p>
           <p className='about-para'>
-            My objective is to deliver the best solution to you and your organisation quickly.
-          </p>        
-          <p className='about-para'>
-            With {yearsOfExp()} years experience in web developpment, it is always
-            really motivating to start new projects. So get in touch and drop me a line.
+            <small>
+              With {yearsOfExp()} years experience in web developpment, 
+              I’m keen on following best coding practices, in backend or in frontend. 
+              Object Orientated Programming, unit, feature and request testing as well as maintainability are the topics I spend a lot of time on. 
+              <br/><br/>
+              This makes apps easier to maintain, refactor and develop in the future.
+              I can start new projects, static websites, web apps or APIs. 
+              Fix bugs, develop new features or fix styling issues on existing projects.
+            </small>
           </p>
+          <p className='about-para'>Get in touch and drop me a line.</p>
           <a href='mailto:nikolaz.90@laposte.net'><FontAwesomeIcon icon={faEnvelope}/></a>
         </div>
       </section>

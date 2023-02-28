@@ -50,9 +50,6 @@ function Navbar() {
         </ul>
       </div>
     </>
-    
-
-
 
     // <nav className='nav-content'>
     //     <h1><Link className='nav-logo' to='/'>Nikolaz.tech</Link></h1>

@@ -276,6 +276,7 @@ button{
 }
 
 .about-para{
+    font-weight: lighter;
     width: 60ch;
 }
 
