@@ -1,3 +1,11 @@
 .articles-section {
 
 }
+
+.article-container {
+    transition: all ease-in-out 0.3s;
+}
+
+.article-container:hover{
+    color: rgb(178, 178, 178);
+}
