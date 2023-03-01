@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Chakra+Petch:wght@300&family=Kumbh+Sans:wght@700&family=Noto+Sans+Mono&family=Zen+Loop&display=swap');
+@import url('navbar.css');
+@import url('hamburger.css');
+@import url('overlay.css');
+@import url('home_page.css');
+@import url('tech_used.css');
+@import url('project_component.css');
+@import url('about_page.css');
+@import url('footer.css');
+
+*{
+    padding: 5px;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --primary-bg-color: white;
+    --primary-color: black;
+    --secondary-bg-color: white;
+    --secondary-color: black;
+    --linear-bg1: rgba(239, 215, 215, 0.5);
+    --linear-bg2: rgba(193, 177, 151, 0.5);
+    --linear-bg3: rgba(108, 212, 228, 0.5);
+    --linear-bg4: rgba(166, 242, 195, 0.5);
+    --primary-section-color: black;
+    --primary-section2-color: rgb(40, 34, 34);
+    --project-bg: rgba(255, 255, 255, 0.4);
+}
+
+.dark-theme{
+    --primary-bg-color: black;
+    --primary-color: white;
+    --secondary-bg-color: white;
+    --secondary-color: black;
+    --linear-bg1: rgba(239, 215, 215, 0.5);
+    --linear-bg2: rgba(193, 177, 151, 0.5);
+    --linear-bg3: rgba(108, 212, 228, 0.5);
+    --linear-bg4: rgba(166, 242, 195, 0.5);
+    --primary-section-color: black;
+    --primary-section2-color: rgb(40, 34, 34);
+    --project-bg: rgba(0, 0, 0,0.4);
+}
+.light-theme{
+    --primary-bg-color: white;
+    --primary-color: black;
+    --secondary-bg-color: black;
+    --secondary-color: white;
+    --linear-bg1: rgba(198, 155, 155, 0.5);
+    --linear-bg2: rgba(244, 212, 161, 0.5);
+    --linear-bg3: rgba(182, 228, 108, 0.5);
+    --linear-bg4: rgba(166, 242, 233, 0.5);
+    --primary-section-color: white;
+    --primary-section2-color: rgb(243, 243, 243);
+    --project-bg: rgba(255, 255, 255, 0.5);
+}
+
+body{
+    background-color: var(--primary-bg-color);
+    color: var(--primary-color);
+    font-family: 'Kumbh Sans', sans-serif;
+    max-width: 1200px;
+    margin: auto;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+button{
+    all: unset;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
