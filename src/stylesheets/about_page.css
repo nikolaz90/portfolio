@@ -1,17 +1,9 @@
-
 .about-section{
     text-align: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    border-radius: 5px;
-    height: fit-content;
-    padding: 20px;
-    margin-top: 25px;
-    background-color: var(--primary-section2-color);
-    max-width: 100%;
-    margin: 45px 0;
 }
 
 .profile-img{

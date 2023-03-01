@@ -39,6 +39,7 @@ function Navbar() {
         <ul className='nav-link-container flex-row'>
           <Link to='/'><li id="nav-link" className={`nav-link ${isActive === 1 ? 'active-nav' : ''}`} onClick={()=>handleActivePage(1)}>Home</li></Link>
           <Link to='/about'><li id="nav-link" className={`nav-link ${isActive === 2 ? 'active-nav' : ''}`} onClick={()=>handleActivePage(2)}>About</li></Link>
+          <Link to='/articles'><li id="nav-link" className={`nav-link ${isActive === 3 ? 'active-nav' : ''}`} onClick={()=>handleActivePage(3)}>Articles</li></Link>
           <span onClick={setDarkTheme}>{isDark ? <li className='nav-link'>Dark mode</li>:<li className='nav-link'>Light mode</li>}</span>
         </ul>
       </nav>
@@ -46,6 +47,7 @@ function Navbar() {
         <ul className='nav-link-container-overlay'>
           <Link to='/' onClick={handleClickLink}><li className='nav-link'>Home</li></Link>
           <Link to='/about' onClick={handleClickLink}><li className='nav-link'>About</li></Link>
+          <Link to='/articles' onClick={handleClickLink}><li className='nav-link'>Articles</li></Link>
           <span onClick={setDarkTheme}>{isDark ? <li className='nav-link'>Dark mode</li>:<li className='nav-link'>Light mode</li>}</span>
         </ul>
       </div>

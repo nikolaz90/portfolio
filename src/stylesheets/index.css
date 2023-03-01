@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Chakra+Petch:wght@300&family=Kumbh+Sans:wght@700&family=Noto+Sans+Mono&family=Zen+Loop&display=swap');
-@import url('navbar.css');
-@import url('hamburger.css');
 @import url('overlay.css');
+@import url('hamburger.css');
+@import url('navbar.css');
 @import url('home_page.css');
 @import url('tech_used.css');
 @import url('project_component.css');
 @import url('about_page.css');
 @import url('footer.css');
+@import url('articles_page.css');
 
+/* Global styles */
 *{
     padding: 5px;
     scroll-behavior: smooth;
@@ -75,12 +77,17 @@ button{
     all: unset;
 }
 
-.flex-col{
-    display: flex;
-    flex-direction: column;
+hr.line-through {
+    border-style: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.6);
 }
 
-.flex-row{
-    display: flex;
-    flex-direction: row;
+.grey-bg-section {
+    border-radius: 5px;
+    height: fit-content;
+    padding: 20px;
+    margin-top: 25px;
+    background-color: var(--primary-section2-color);
+    max-width: 100%;
+    margin: 45px 0;
 }

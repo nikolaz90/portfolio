@@ -14,7 +14,7 @@ const yearsOfExp = () => {
 function About() {
   return (
     <>
-      <section className='about-section'>
+      <section className='about-section grey-bg-section'>
         <img className='profile-img' alt='profile of Nikolaz' src={profileImage}/>
         <div>
           <h2 className='work-title'>Hello!</h2>
