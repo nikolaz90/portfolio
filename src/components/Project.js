@@ -13,7 +13,6 @@ function Project({title, tech, img, description, link}) {
                   <p><small>{description}</small></p>
                   <p className='small-para'><small>Click to see it</small></p>
                 </div>
-                
             </div>
         </article>          
       </a>

@@ -41,12 +41,12 @@ function Home() {
       <section ref={container} className='home-section' style={{backgroundPosition:`${yAxis}px ${xAxis}px`}}>
         <h2 className='home-title'>{screenWidth > 560 ? headerTitle: headerTitleSmall}</h2>
         <h3 className='home-title-para'>Creative, empathetic and business minded web developer</h3>
-        <a href="#work-section" className='scroll-down-link'><small>scroll down</small></a>
+        <a href="#profession-section" className='scroll-down-link'><small>scroll down</small></a>
       </section>
       <section>
         <TechUsed/>
       </section>
-      <section className='work-section professional-work-section'>
+      <section className='work-section professional-work-section' id="profession-section">
         <h2 className='work-title'>Work</h2>
         <p>When freelancing, it's great to be able to work on really different projects</p>
         <p>I recently set up a website and back office for an artist I know that allows them to manage the content too</p>
