@@ -2,7 +2,7 @@
     position: relative;
     height: fit-content;
     width: 350px;
-    border-radius: 35px;
+    border-radius: 5px;
     padding: 10px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,7 +14,7 @@
 .project-article:hover{
     padding: 7px;
     margin: 13px;
-    border-radius: 32px;
+    border-radius: 3px;
     box-shadow: 5px 5px 0px var(--secondary-bg-color);
 }
 
@@ -22,7 +22,7 @@
     z-index: 3;
     background-color: var(--project-bg);
     backdrop-filter: blur(0px);
-    border-radius: 25px;
+    border-radius: 3px;
     transition: all 0.3s ease-in-out;
     overflow: hidden;
 }

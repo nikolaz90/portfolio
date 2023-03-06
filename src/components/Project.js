@@ -15,7 +15,6 @@ function Project({title, tech, img, description, link}) {
                 </div>
                 
             </div>
-            
         </article>          
       </a>
 

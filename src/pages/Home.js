@@ -1,16 +1,21 @@
 import React, {useState, useRef, useEffect} from 'react'
 import projects from '../projectsData'
 import Project from '../components/Project'
+import ProfessionalProject from '../components/ProfessionalProject'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCodeFork, faCode, faQrcode, faTerminal,faMeteor } from '@fortawesome/free-solid-svg-icons'
 import TechUsed from '../components/TechUsed'
 
 function Home() {
+  const professionalProjects = projects.filter((item) => item.projectType === 'professional')
+  const personalProjects = projects.filter((item) => item.projectType === 'personal')
+
+
   const [xAxis, setXAxis] = useState(0);
   const [yAxis, setYAxis] = useState(0);
   const [rotateDeg, setRotateDeg] = useState(1);
-  const headerTitle = '{ Web Developer }'
-  const headerTitleSmall = 'Web Developer'
+  const headerTitle = "Hello, I'm Nikolaz"
+  const headerTitleSmall = "Hi, I'm Nikolaz"
   const screenWidth = document.documentElement.clientWidth
 
   const container = useRef(null)
@@ -42,15 +47,25 @@ function Home() {
       <section>
         <TechUsed/>
       </section>
+      <section className='work-section professional-work-section'>
+        <h2 className='work-title'>Work</h2>
+        <div className='projects-container'>
+        {professionalProjects.map((item) => {
+          return (
+            <Project key={item.id} {...item} />
+            )
+          })}
+        </div>
+      </section>
       <section className='work-section' id='work-section'>
-          <h2 className='work-title'>Work</h2>
+        <h2 className='work-title'>Personal projects</h2>
         <div className='projects-container'>
           <FontAwesomeIcon className='star token-1' style={{transform:`rotate(${rotateDeg*10}deg)`}} icon={faCodeFork} />
           <FontAwesomeIcon className='star token-2' style={{transform:`rotate(-${rotateDeg+20}deg)`}} icon={faCode}/>
           <FontAwesomeIcon className='star token-3' style={{transform:`rotate(-${rotateDeg+1}deg)`}} icon={faQrcode}/>
           <FontAwesomeIcon className='star token-4' style={{transform:`rotate(-${rotateDeg}deg)`}} icon={faTerminal} />
           <FontAwesomeIcon className='star token-5' style={{transform:`rotate(${rotateDeg+10}deg)`}} icon={faMeteor}/>
-          {projects.map((item)=>{
+          {personalProjects.map((item)=>{
             return <Project key={item.id} {...item}/>
           })}          
         </div>
