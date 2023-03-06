@@ -8,7 +8,7 @@ export default function TechUsed() {
         <div className='tech-used-container'>
             {techUsed.map((item) => {
                 return (
-                  <article className='tech-used-article'>
+                  <article key={item.id} className='tech-used-article'>
                     <span>{item.tech}</span>
                     <img key={item.id} className='tech-used-icon' src={item.img} alt={item.tech}/>
                   </article>

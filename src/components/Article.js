@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function Article({article, mostRecentArticleNumber}) {
-
+  
   return (
     <a target='_blank' rel='noreferrer' href={article.url}>      
         <article className='article-container'>
