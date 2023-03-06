@@ -27,19 +27,19 @@ const techUsedData = [{
     tech: 'sass',
     img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg'
 },{
-    id: 7, 
+    id: 8, 
     tech: 'git', 
     img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg'
 },{
-    id: 8, 
+    id: 9, 
     tech: 'heroku', 
     img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original-wordmark.svg'
 },{
-    id: 9,
+    id: 10,
     tech: 'filezilla',
     img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/filezilla/filezilla-plain.svg'
 }, {
-    id: 10,
+    id: 11,
     tech: 'html',
     img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg'
 }]
