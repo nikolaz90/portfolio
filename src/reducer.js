@@ -7,11 +7,10 @@ function reducer (state, action){
         return {...state, isLoading:false, repos: action.payload}
     }
     if(action.type === 'SET_ARTICLES_DATA'){
-        return {...state, isArticlesLoading: false, articlesData: action.payload}
+        return {...state, isArticlesLoading: false, articlesData: action.payload.reverse()}
     }
 
     return state
 }
-
 
 export default reducer
