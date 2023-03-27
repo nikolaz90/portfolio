@@ -17,12 +17,12 @@ const projects = [{
     projectType: 'professional'
 },{
     id: 3, 
-    title: 'Regularly',
+    title: 'Pam',
     tech: 'ruby on rails', 
     img: 'https://cdn.pixabay.com/photo/2017/03/18/04/20/app-2153173_1280.png',
-    description: "A simple web app to help people get into saving and for tracking these with an account",
-    link: 'https://mbs-regularly.fly.dev/',
-    projectType: 'personal'
+    description: "Back office tool for Pascale Art",
+    link: 'https://pam.herokuapp.com/',
+    projectType: 'professional'
 },{
     id: 4, 
     title: 'Savings tool',
