@@ -52,7 +52,7 @@ function Home() {
         <p>I recently set up a website and back office for an artist I know that allows them to manage the content too</p>
         <div className='projects-container'>
 
-          {isProjectsLoading ? 'Loading...' : professionalProjects.map((item) => {
+          {isProjectsLoading ? <p>Loading...</p> : professionalProjects.map((item) => {
             return (
               <Project key={item.id} {...item} />
               )
@@ -67,7 +67,7 @@ function Home() {
           <FontAwesomeIcon className='star token-3' style={{transform:`rotate(-${rotateDeg+1}deg)`}} icon={faQrcode}/>
           <FontAwesomeIcon className='star token-4' style={{transform:`rotate(-${rotateDeg}deg)`}} icon={faTerminal} />
           <FontAwesomeIcon className='star token-5' style={{transform:`rotate(${rotateDeg+10}deg)`}} icon={faMeteor}/>
-          {isProjectsLoading ? 'Loading...' : personalProjects.map((item)=>{
+          {isProjectsLoading ? <p>Loading...</p> : personalProjects.map((item)=>{
             return <Project key={item.id} {...item}/>
           })}          
         </div>

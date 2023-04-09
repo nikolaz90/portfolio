@@ -26,7 +26,7 @@ const AppProvider = ({children}) =>{
         dispatch({type:'SET_ARTICLES_DATA', payload:data})
     }
     const setProjectsData = (data) => {
-        dispatch({type: 'SET_¨PROJECTS_DATA', payload:data})
+        dispatch({type: 'SET_PROJECTS_DATA', payload:data})
     }
 
     useEffect(()=>{
