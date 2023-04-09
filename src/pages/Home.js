@@ -1,14 +1,15 @@
 import React, {useState, useRef, useEffect} from 'react'
-import projects from '../projectsData'
+// import projects from '../projectsData'
 import Project from '../components/Project'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCodeFork, faCode, faQrcode, faTerminal,faMeteor } from '@fortawesome/free-solid-svg-icons'
 import TechUsed from '../components/TechUsed'
+import { useGlobalContext } from '../context'
 
 function Home() {
-  const professionalProjects = projects.filter((item) => item.projectType === 'professional')
-  const personalProjects = projects.filter((item) => item.projectType === 'personal')
-
+  const {projectsData, isProjectsLoading} = useGlobalContext()
+  const professionalProjects = projectsData.filter((item) => item.projectType === 'professional')
+  const personalProjects = projectsData.filter((item) => item.projectType === 'personal')
 
   const [xAxis, setXAxis] = useState(0);
   const [yAxis, setYAxis] = useState(0);
@@ -51,11 +52,12 @@ function Home() {
         <p>When freelancing, it's great to be able to work on really different projects</p>
         <p>I recently set up a website and back office for an artist I know that allows them to manage the content too</p>
         <div className='projects-container'>
-        {professionalProjects.map((item) => {
-          return (
-            <Project key={item.id} {...item} />
-            )
-          })}
+
+          {isProjectsLoading ? 'Loading...' : professionalProjects.map((item) => {
+            return (
+              <Project key={item.id} {...item} />
+              )
+            })}
         </div>
       </section>
       <section className='work-section' id='work-section'>
@@ -66,7 +68,7 @@ function Home() {
           <FontAwesomeIcon className='star token-3' style={{transform:`rotate(-${rotateDeg+1}deg)`}} icon={faQrcode}/>
           <FontAwesomeIcon className='star token-4' style={{transform:`rotate(-${rotateDeg}deg)`}} icon={faTerminal} />
           <FontAwesomeIcon className='star token-5' style={{transform:`rotate(${rotateDeg+10}deg)`}} icon={faMeteor}/>
-          {personalProjects.map((item)=>{
+          {isProjectsLoading ? 'Loading...' : personalProjects.map((item)=>{
             return <Project key={item.id} {...item}/>
           })}          
         </div>
@@ -75,6 +77,5 @@ function Home() {
 
   )
 }
-
 
 export default Home

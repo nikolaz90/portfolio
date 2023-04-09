@@ -9,6 +9,9 @@ function reducer (state, action){
     if(action.type === 'SET_ARTICLES_DATA'){
         return {...state, isArticlesLoading: false, articlesData: action.payload.reverse()}
     }
+    if(action.type === 'SET_PROJECT_DATA'){
+        return {...state, isProjectsLoading: false, projectsData: action.payload}
+    }
 
     return state
 }

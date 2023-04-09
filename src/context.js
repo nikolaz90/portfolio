@@ -8,7 +8,9 @@ const initialState = {
     isLoading: true,
     repos: [],
     articlesData: [],
-    isArticlesLoading: true
+    isArticlesLoading: true,
+    projectsData: [],
+    isProjectsLoading: true
 }
 
 const AppProvider = ({children}) =>{
@@ -23,6 +25,9 @@ const AppProvider = ({children}) =>{
     const setArticlesData = (data) => {
         dispatch({type:'SET_ARTICLES_DATA', payload:data})
     }
+    const setProjectsData = (data) => {
+        dispatch({type: 'SET_¨PROJECTS_DATA', payload:data})
+    }
 
     useEffect(()=>{
         if(state.isDark === false){
@@ -34,6 +39,7 @@ const AppProvider = ({children}) =>{
 
     const urlForRepos = 'https://api.github.com/users/nikolaz90/repos?per_page=100'
     const urlForArticles = 'https://papatoo.herokuapp.com/api/v1/portfolio_articles'
+    const urlForProjects = 'https://papatoo.herokuapp.com/api/v1/projects'
 
     const fetchData = async () => {
       try{
@@ -53,9 +59,17 @@ const AppProvider = ({children}) =>{
           .catch(error => console.log(error))
       };
 
+    const fetchProjects = () => {
+        fetch(urlForProjects)
+            .then(response => response.json())
+            .then(data => setProjectsData(data.projects))
+            .catch(error => console.log(error))
+    }
+
     useEffect(()=>{
         fetchData()
         fetchArticles()
+        fetchProjects()
     }, []);
 
     return <AppContext.Provider value={{
