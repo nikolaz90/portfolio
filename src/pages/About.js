@@ -1,5 +1,5 @@
 import React from 'react'
-import profileImage from '../images/Image1.png'
+import profileImage from '../images/redman.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import Stats from '../components/Stats'
