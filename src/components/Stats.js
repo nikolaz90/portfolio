@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import {useGlobalContext} from '../context'
 import Doughnut2DChart from './Doughnut2dChart'
 
