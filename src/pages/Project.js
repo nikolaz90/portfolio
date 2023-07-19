@@ -7,7 +7,6 @@ function Project() {
     const {projectsData, isProjectsLoading} = useGlobalContext();
 
     const project = projectsData.find(project => project.id === Number(id));
-    console.log(project);
 
     return (
         isProjectsLoading ? <p>Loading...</p> :
