@@ -11,6 +11,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 //components
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import Loader from './components/Loader'
 
 const Home = React.lazy(() => import('./pages/Home'))
 const About = React.lazy(() => import('./pages/About'));
@@ -26,31 +27,31 @@ function App() {
           <Routes>
               <Route path='/' 
                     element={
-                      <React.Suspense fallback={<>...</>}>
+                      <React.Suspense fallback={<Loader/>}>
                         <Home/>
                       </React.Suspense>
                     } />
               <Route path='/about' 
                     element={
-                      <React.Suspense fallback={<>...</>}>
+                      <React.Suspense fallback={<Loader/>}>
                         <About/>
                       </React.Suspense>
                     }/>
               <Route path='/articles' 
                     element={
-                      <React.Suspense fallback={<>...</>}>
+                      <React.Suspense fallback={<Loader/>}>
                         <Articles/>
                       </React.Suspense>
                     }/>
               <Route path='/project/:id' 
                     element={
-                      <React.Suspense fallback={<>...</>}>
+                      <React.Suspense fallback={<Loader/>}>
                         <Project/>
                       </React.Suspense>
                     }/>
               <Route path='/*' 
                     element={
-                      <React.Suspense fallback={<>...</>}>
+                      <React.Suspense fallback={<Loader/>}>
                         <Error/>
                       </React.Suspense>
                     }/>

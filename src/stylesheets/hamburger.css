@@ -19,7 +19,7 @@
     display:block;
     height: 0.2rem;
     width: 40px;
-    background: var(--primary-color);;
+    background: var(--primary-color);
     position: absolute;
     border-radius: 3px;
     transition: transform 0.5s cubic-bezier(0.1, 1, 0.5, 1);

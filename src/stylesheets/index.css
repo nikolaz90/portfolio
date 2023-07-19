@@ -9,6 +9,7 @@
 @import url('footer.css');
 @import url('articles_page.css');
 @import url('project_page.css');
+@import url('loader.css');
 
 /* Global styles */
 *{
