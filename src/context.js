@@ -1,5 +1,6 @@
 import React, {useEffect, useContext, useReducer} from 'react'
 import reducer from './reducer';
+import { dummyProjects } from './data/test_data/projects';
 
 const AppContext = React.createContext()
 
@@ -69,7 +70,8 @@ const AppProvider = ({children}) =>{
     useEffect(()=>{
         fetchData()
         fetchArticles()
-        fetchProjects()
+        // fetchProjects()
+        setProjectsData(dummyProjects.projects)
     }, []);
 
     return <AppContext.Provider value={{

@@ -5,7 +5,9 @@ function Project() {
     const {id} = useParams();
 
     return (
-        <div>{id}</div>
+        <section>
+            {id}
+        </section>
     )
 }
 
