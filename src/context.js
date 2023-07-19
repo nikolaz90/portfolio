@@ -68,10 +68,15 @@ const AppProvider = ({children}) =>{
     }
 
     useEffect(()=>{
-        fetchData()
-        fetchArticles()
-        // fetchProjects()
-        setProjectsData(dummyProjects.projects)
+        fetchData();
+        if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
+            setProjectsData(dummyProjects.projects);
+            console.log('%c -- dev -> by nikolaz -- ', 'background: #004e58; color: #baead8; font-family: cursive; font-size: 20px');
+        } else {
+            fetchArticles();
+            fetchProjects();
+            console.log('%c -- prod -> by nikolaz -- ', 'background: #004e58; color: #baead8; font-family: cursive; font-size: 20px');
+        }
     }, []);
 
     return <AppContext.Provider value={{
