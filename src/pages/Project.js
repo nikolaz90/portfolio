@@ -4,19 +4,21 @@ import { useGlobalContext } from '../context';
 
 function Project() {
     const {id} = useParams();
-    const {projectsData} = useGlobalContext();
+    const {projectsData, isProjectsLoading} = useGlobalContext();
 
     const project = projectsData.find(project => project.id === Number(id));
 
     console.log(project);
 
     return (
-        <section>
-            <h2>{project.title}</h2>
-            <p>
-                tech used : {project.tech}
-            </p>
-        </section>
+        isProjectsLoading ? <p>Loading...</p> :
+            <section>
+                <h2>{project.title}</h2>
+                <p>
+                    tech used : {project.tech}
+                </p>
+            </section>
+        
     )
 }
 
