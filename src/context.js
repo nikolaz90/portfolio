@@ -1,6 +1,7 @@
 import React, {useEffect, useContext, useReducer} from 'react'
 import reducer from './reducer';
 import { dummyProjects } from './data/test_data/projects';
+import { dummyArticles } from './data/test_data/articles';
 
 const AppContext = React.createContext()
 
@@ -70,6 +71,7 @@ const AppProvider = ({children}) =>{
     useEffect(()=>{
         fetchData();
         if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
+            setArticlesData(dummyArticles.articles);
             setProjectsData(dummyProjects.projects);
             console.log('%c -- dev -> by nikolaz -- ', 'background: #004e58; color: #baead8; font-family: cursive; font-size: 20px');
         } else {
