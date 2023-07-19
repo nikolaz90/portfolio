@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { textShortener } from '../utils/helpers/decorate'
 
 function Project({title, tech, img, description, id, link}) {
-  const {isDark} = useGlobalContext()
+  const {isDark} = useGlobalContext();
   return (
       <Link to={`/project/${id}`} >
         <article className='project-article' style={{backgroundImage:`url(${img})`}}>
