@@ -1,10 +1,12 @@
 import React from 'react'
 import {useGlobalContext} from '../context'
+import { Link } from 'react-router-dom'
 
-function Project({title, tech, img, description, link}) {
+function Project({title, tech, img, description, id, link}) {
   const {isDark} = useGlobalContext()
   return (
-      <a target='_blank' rel='noreferrer' href={link}>
+      // <a target='_blank' rel='noreferrer' href={link}>
+      <Link to={`/project/${id}`} >
         <article className='project-article' style={{backgroundImage:`url(${img})`}}>
             <div className='project-info-container'>
                 <h3 className='project-title'>{title}</h3>
@@ -15,7 +17,8 @@ function Project({title, tech, img, description, link}) {
                 </div>
             </div>
         </article>          
-      </a>
+      </Link>
+      // </a>
 
   )
 }
