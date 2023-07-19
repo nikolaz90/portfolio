@@ -26,8 +26,9 @@ function About() {
               Object Orientated Programming, unit, feature and request testing as well as maintainability are the topics I spend a lot of time on. 
               <br/><br/>
               This makes apps easier to maintain, refactor and develop in the future.
-              I can start new projects, static websites, web apps or APIs. 
-              Fix bugs, develop new features or fix styling issues on existing projects.
+              I can start new projects, web apps or APIs.
+              Include documentation and tests, or fix bugs, 
+              develop new features on old projects or fix styling issues.
             </small>
           </p>
           <p className='about-para'>Get in touch and drop me a line.</p>
