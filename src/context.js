@@ -35,7 +35,7 @@ const AppProvider = ({children}) =>{
         if(state.isDark === false){
             document.documentElement.className = 'dark-theme'
         } else if(state.isDark === true){
-          document.documentElement.className = 'light-theme'  
+            document.documentElement.className = 'light-theme'  
         }
     }, [state.isDark])
 
@@ -44,22 +44,22 @@ const AppProvider = ({children}) =>{
     const urlForProjects = 'https://papatoo.herokuapp.com/api/v1/projects'
 
     const fetchData = async () => {
-      try{
-        const data = await fetch(urlForRepos)
-        const response = await data.json()
-        setRepos(response);
-      }catch(error){
-        setRepos([{label:'javascript', count: 1},{label:'css', count:1},{label:'html', count:1}])
-        console.log(error)
-      }   
-    }
+        try{
+            const data = await fetch(urlForRepos)
+            const response = await data.json()
+            setRepos(response);
+        }catch(error){
+            setRepos([{label:'javascript', count: 1},{label:'css', count:1},{label:'html', count:1}])
+            console.log(error)
+        }   
+        }
 
     const fetchArticles = () => {
         fetch(urlForArticles)
-          .then(response => response.json())
-          .then(data => setArticlesData(data.articles))
-          .catch(error => console.log(error))
-      };
+            .then(response => response.json())
+            .then(data => setArticlesData(data.articles))
+            .catch(error => console.log(error))
+    };
 
     const fetchProjects = () => {
         fetch(urlForProjects)

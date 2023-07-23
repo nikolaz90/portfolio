@@ -6,9 +6,17 @@ import TechUsed from '../components/TechUsed'
 import { useGlobalContext } from '../context'
 
 function Home() {
-  const {projectsData, isProjectsLoading} = useGlobalContext()
-  const professionalProjects = projectsData.filter((item) => item.projectType === 'professional')
-  const personalProjects = projectsData.filter((item) => item.projectType === 'personal')
+  const {projectsData, isProjectsLoading} = useGlobalContext();
+  
+  const projectFilterer = (type) => {
+    return projectsData.filter(project => {
+      return project.projectType === type
+    }).sort((a, b) => a.id - b.id)
+  }
+
+  const professionalProjects = projectFilterer('professional');
+  const personalProjects = projectFilterer("personal");
+
 
   const [xAxis, setXAxis] = useState(0);
   const [yAxis, setYAxis] = useState(0);
