@@ -7,11 +7,11 @@ import { useGlobalContext } from '../context'
 
 function Home() {
   const {projectsData, isProjectsLoading} = useGlobalContext();
-  
+
   const projectFilterer = (type) => {
     return projectsData.filter(project => {
       return project.projectType === type
-    }).sort((a, b) => a.id - b.id)
+    }).sort((a, b) => b.id - a.id)
   }
 
   const professionalProjects = projectFilterer('professional');

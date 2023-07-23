@@ -1,6 +1,15 @@
 export const dummyProjects = {
     "projects": [
         {
+            "id": 9,
+            "title": "nine inch nails",
+            "tech": "ruby on rails",
+            "description": "A blog and community platform that allows parents to meet and chat with an interactive map",
+            "img": "https://cdn.pixabay.com/photo/2017/09/05/11/37/baby-2717347_1280.jpg",
+            "link": "https://papatoo.herokuapp.com/",
+            "projectType": "personal"
+        },
+        {
             "id": 3,
             "title": "Papatoo",
             "tech": "ruby on rails",
