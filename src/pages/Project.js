@@ -12,13 +12,21 @@ function Project() {
         isProjectsLoading ? <p>Loading...</p> :
             <section className='project-page-section'>
                 <h2>{project.title}</h2>
-                <img className='small-project-img' src={project.img} alt={`${project.title} by Nikolaz`}/>
+                <a target='_blank' rel='noreferrer' href={project.link}>
+                    <img className='small-project-img' src={project.img} alt={`${project.title} by Nikolaz`}/>
+                </a>
                 <p>
-                    tech used : {project.tech} 
+                    Tech used : 
+                    <br/> 
+                    <br/> 
+                    <small>{project.tech} </small>
                     <br/>
                     <br/>
                     <br/>
-                    description : {project.description}
+                    Description : 
+                    <br/>
+                    <br/>  
+                    <small>{project.description}</small>
                 </p>
                 <a target='_blank' rel='noreferrer' href={project.link}>See {project.title} live</a>
             </section>
