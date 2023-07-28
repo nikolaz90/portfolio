@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { useGlobalContext } from '../context';
 
@@ -8,6 +8,10 @@ function Project() {
 
     const project = projectsData.find(project => project.id === Number(id));
 
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [])
+    
     return (
         isProjectsLoading ? <p>Loading...</p> :
             <section className='project-page-section'>
