@@ -1,0 +1,15 @@
+.cta-one {
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+    padding: 0.2rem 1rem;
+    border: 0.1rem solid var(--primary-color);
+    border-radius: 0.3rem;
+    box-shadow: 0.1rem 0.1rem 0 var(--primary-color);
+    transition: all ease-in-out 0.3s;
+}
+
+.cta-one:hover {
+    background: var(--primary-bg-color);
+    box-shadow: 0.05rem 0.05rem 0 var(--primary-color);
+}

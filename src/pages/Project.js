@@ -19,20 +19,15 @@ function Project() {
                 <a target='_blank' rel='noreferrer' href={project.link}>
                     <img className='small-project-img' src={project.img} alt={`${project.title} by Nikolaz`}/>
                 </a>
-                <p>
-                    Tech used : 
-                    <br/> 
-                    <br/> 
-                    <small>{project.tech} </small>
-                    <br/>
-                    <br/>
-                    <br/>
-                    Description : 
-                    <br/>
-                    <br/>  
-                    <small>{project.description}</small>
-                </p>
-                <a target='_blank' rel='noreferrer' href={project.link}>See {project.title} live</a>
+                <article className='grey-bg-section project-details-container'>
+                    <p><strong>Tech used : </strong></p>
+                    <p><small>{project.tech} </small></p>
+                    <p><strong>Description :</strong> </p>
+                    <p><small>{project.description}</small></p>
+                    <a className='cta-one' target='_blank' rel='noreferrer' href={project.link}>
+                        See {project.title} live
+                    </a>
+                </article>
             </section>
         
     )

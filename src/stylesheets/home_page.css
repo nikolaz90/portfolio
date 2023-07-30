@@ -72,11 +72,6 @@
     }
 }
 
-.work-title{
-    font-family: 'Zen Loop', cursive;
-    font-size: 70px;
-}
-
 .star{
     transition: all 3s ease-in-out;
     z-index: 0;
