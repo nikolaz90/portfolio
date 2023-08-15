@@ -56,8 +56,6 @@ function Home() {
       </section>
       <section className='work-section professional-work-section' id="profession-section">
         <h2 className='work-title'>Work</h2>
-        <p>When freelancing, it's great to be able to work on really different projects</p>
-        <p>I recently set up a website and back office for an artist I know that allows them to manage the content too</p>
         <div className='projects-container'>
 
           {isProjectsLoading ? <p>Loading...</p> : professionalProjects.map((item) => {
