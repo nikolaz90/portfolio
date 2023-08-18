@@ -1,7 +1,7 @@
 import React from 'react'
 import {useGlobalContext} from '../context'
 import { Link } from 'react-router-dom'
-import { textShortener } from '../utils/helpers/decorate'
+import { textCutter, textShortener } from '../utils/helpers/decorate'
 
 function Project({title, tech, img, description, id, link}) {
   const {isDark} = useGlobalContext();
@@ -13,7 +13,7 @@ function Project({title, tech, img, description, id, link}) {
                 <div className={`${isDark && 'project-info-tab'}`}>
                   <p>tech used: {tech}</p>
                   <p><small>{textShortener(description, 50)}</small></p>
-                  <p className='small-para'><small>Click to see it</small></p>
+                  <p className='small-para'><small>More</small></p>
                 </div>
             </div>
         </article>          

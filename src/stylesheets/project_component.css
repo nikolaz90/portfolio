@@ -70,3 +70,34 @@
         font-size: 9px;
     }
 }
+
+/* @media (max-width:500px) {
+    .project-article{
+        position: relative;
+        height: fit-content;
+        width: 250px;
+        border-radius: 5px;
+        margin: 10px;
+        z-index: 2;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+    .project-info-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .project-title{
+        font-size: 1.5rem;
+    }
+    .project-info-tab {
+        width: 45%;
+        height: 6rem;
+    }
+    .project-info-tab > p > small {
+        display: none;
+    }
+    .stats-reiteration{
+        flex-wrap: nowrap;
+        font-size: 9px;
+    }
+} */
